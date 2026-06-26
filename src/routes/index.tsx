@@ -230,10 +230,10 @@ function MobileMenu({ open, onClose, profile, onSwitch }: { open: boolean; onClo
           </div>
         </div>
         <nav className="flex-1 px-3 space-y-1">
-          {[
+          {([
             ["Inicio", Home], ["Destinos", Compass], ["Hospedaje", Hotel],
             ["Transporte", Plane], ["Alertas IA", Sparkles], ["Favoritos", Heart],
-          ].map(([label, Icon]: [string, typeof Home]) => (
+          ] as const).map(([label, Icon]) => (
             <button key={label} onClick={onClose} className="w-full flex items-center gap-3 px-3 h-11 rounded-xl hover:bg-secondary text-sm font-medium">
               <Icon className="h-4.5 w-4.5" /> {label}
             </button>

@@ -8,7 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
-import smartTripLogo from '/workspaces/smart-ecuador-explore/src/assets/SmartTripLogo.png';
+import smartTripLogo from "../assets/SmartTripLogo.png";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 

@@ -5,7 +5,7 @@ import {
   Hotel, MapPin, MessageCircle, Menu, Mountain, Plane, Search, Send, Shield,
   Sparkles, Star, Tag, Tent, Users, Utensils, Wifi, X, Home, Heart, User,
 } from "lucide-react";
-import smartTripLogo from "../assets/smarttrip-logo.png";
+import smartTripLogo from "/workspaces/smart-ecuador-explore/src/assets/SmartTripLogo.png";
 
 export const Route = createFileRoute("/")({
   component: SmartTripApp,

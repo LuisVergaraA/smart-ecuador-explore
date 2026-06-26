@@ -5,7 +5,7 @@ import {
   Hotel, MapPin, MessageCircle, Menu, Mountain, Plane, Search, Send, Shield,
   Sparkles, Star, Tag, Tent, Users, Utensils, Wifi, X, Home, Heart, User,
 } from "lucide-react";
-import logoAsset from "@/assets/smarttrip-logo.png.asset.json";
+import smartTripLogo from "../assets/smarttrip-logo.png";
 
 export const Route = createFileRoute("/")({
   component: SmartTripApp,
@@ -70,7 +70,7 @@ function ProfileSelector({ onSelect }: { onSelect: (p: ProfileId) => void }) {
         style={{ backgroundImage: "radial-gradient(circle at 20% 20%, white 1px, transparent 1px), radial-gradient(circle at 80% 70%, white 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-20">
         <div className="flex items-center gap-3 mb-12">
-          <img src={logoAsset.url} alt="SmartTrip" className="h-12 w-12 rounded-xl object-contain bg-white p-1 ring-2 ring-white/30" />
+          <img src={smartTripLogo} alt="SmartTrip" className="h-12 w-12 rounded-xl object-contain bg-white p-1 ring-2 ring-white/30" />
           <div>
             <div className="font-display font-bold text-xl tracking-tight">SmartTrip</div>
             <div className="text-xs text-white/70">Descubre Ecuador inteligentemente</div>
@@ -120,7 +120,7 @@ function ProfileSelector({ onSelect }: { onSelect: (p: ProfileId) => void }) {
 function LogoMark({ size = "h-10 w-10" }: { size?: string }) {
   return (
     <div className={`${size} rounded-xl overflow-hidden ring-1 ring-border bg-white grid place-items-center shrink-0`}>
-      <img src={logoAsset.url} alt="SmartTrip logo" className="h-full w-full object-contain p-0.5" />
+      <img src={smartTripLogo} alt="SmartTrip logo" className="h-full w-full object-contain p-0.5" />
     </div>
   );
 }
